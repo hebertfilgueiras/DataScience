@@ -96,8 +96,8 @@ dtm <- TermDocumentMatrix(docs)
 m <- as.matrix(dtm)
 v <- sort(rowSums(m),decreasing=TRUE)
 class(m)
-head(m)
-v
+head(m,10)
+v[2]
 d <- data.frame(word = names(v), freq = v)
 head(d, 10)
 
